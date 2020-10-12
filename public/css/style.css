@@ -177,12 +177,14 @@ h1, h2, h3, h4, h5, h6{
 
 /*Styling for the first section*/
 .firstSection{
-  width: 100vw;
-  height: 100vh;
   background: #FFF;
+  display: inline-flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.firstSection h1{
+.bodyContainer h1{
   color: #000;
   display: flex;
   margin-top: 69px;
@@ -192,12 +194,31 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .create, .revamp{
-  border: 1px solid black;
-  height: 489px;
+  height: 550px;
   width: 403px;
  }
 
+.create img, .revamp img{
+  width: 100%;
+}
 
+.create h2, .revamp h2{
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.create p, .revamp p{
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.create a, .revamp a{
+  display: flex;
+  justify-content: center;
+
+}
 
 .secondSection{
   width: 100%;
