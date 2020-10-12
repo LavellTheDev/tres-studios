@@ -9,7 +9,7 @@ html{
 
 body{
   background-color: #FFF;
-  color: #FFF;
+  color: #000;
   line-height: 1.5;
   overflow-x: hidden;
   padding: 0;
@@ -179,8 +179,25 @@ h1, h2, h3, h4, h5, h6{
 .firstSection{
   width: 100vw;
   height: 100vh;
-  background: #fdf0d5;
+  background: #FFF;
 }
+
+.firstSection h1{
+  color: #000;
+  display: flex;
+  margin-top: 69px;
+  justify-content: center;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.create, .revamp{
+  border: 1px solid black;
+  height: 489px;
+  width: 403px;
+ }
+
+
 
 .secondSection{
   width: 100%;
