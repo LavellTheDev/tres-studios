@@ -187,16 +187,23 @@ h1, h2, h3, h4, h5, h6{
 .bodyContainer h1{
   color: #000;
   display: flex;
-  margin-top: 69px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   justify-content: center;
   width: 100%;
   font-size: 2rem;
 }
 
 .create, .revamp{
+  margin-left: 4rem;
   height: 550px;
   width: 403px;
  }
+
+ .create{
+   margin-left: -1rem;
+ }
+
 
 .create img, .revamp img{
   width: 100%;
@@ -218,6 +225,19 @@ h1, h2, h3, h4, h5, h6{
   display: flex;
   justify-content: center;
 
+}
+
+.create:hover, .revamp:hover{
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.create:hover{
+  background: #859CAF;
+}
+
+.revamp:hover{
+  background: #CBDF90;
 }
 
 .secondSection{
