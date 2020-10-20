@@ -195,6 +195,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .create, .revamp{
+  border: 1px solid black;
+  border-radius: 5px;
   margin-left: 4rem;
   height: 550px;
   width: 403px;
@@ -229,19 +231,48 @@ h1, h2, h3, h4, h5, h6{
 
 .create:hover, .revamp:hover{
   border-radius: 5px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
-.create:hover{
-  background: #859CAF;
-}
 
-.revamp:hover{
-  background: #CBDF90;
-}
+
+/*Styling of the second section*/
 
 .secondSection{
-  width: 100%;
+  background: #FFF;
   height: 100vh;
-  background: lime;
+  width: 100vw;
 }
+
+.secondSectionContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.secondSection h1{
+  color: #000;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: center;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.consulting, .development, .creative{
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 4rem;
+  height: 550px;
+  width: 333px;
+ }
+
+ .consulting img, .development img, .creative img{
+   width: 100%;
+ }
+
+ .consulting h2, .development h2, .creative h2{
+   font-size: 1.5rem;
+   letter-spacing: 0.2rem;
+   text-align: center;
+ }
