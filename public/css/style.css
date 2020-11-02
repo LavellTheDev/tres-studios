@@ -195,10 +195,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .create, .revamp{
-  border: 1px solid black;
+  box-shadow: 0 0 1px rgba(48,48,48,.54);
   border-radius: 5px;
   margin-left: 4rem;
   height: 550px;
+  transition: .5s;
   width: 403px;
  }
 
@@ -230,10 +231,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .create:hover, .revamp:hover{
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
+
 }
 
+.animate{
+  backface-visibility: hidden;
+  transform: translate3d(0,0,0);
+  transition-timing-function: cubic-bezier(.25,.1,.2,1);
+}
 
 
 /*Styling of the second section*/
@@ -247,6 +252,7 @@ h1, h2, h3, h4, h5, h6{
 .secondSectionContainer{
   display: flex;
   justify-content: center;
+  margin-left: -80px;
 }
 
 .secondSection h1{
@@ -276,3 +282,34 @@ h1, h2, h3, h4, h5, h6{
    letter-spacing: 0.2rem;
    text-align: center;
  }
+
+.thirdSection{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.thirdSection h1{
+  align-items: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.verticalHeaderContact{
+  transform: rotate(-90deg);
+}
+
+.verticalHeaderTres{
+    transform: rotate(90deg);
+}
+
+.thirdSection img{
+  position: absolute;
+  left: 320px;
+  margin-top: 0.5rem;
+  width: 50%;
+}
+footer{
+  background: red;
+}
